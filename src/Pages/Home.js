@@ -130,7 +130,7 @@ const Home = () => {
           <img src='https://pbs.twimg.com/profile_images/874739741547089921/tHTtxuZ3.jpg' style={styles.image}/>
           <div style={styles.infoBox}>
             <h1 style={styles.myName}><span style={styles.thinText}>Emily</span> <span style={styles.thickText}>Cheroske</span></h1>
-            <h3 style={styles.myInfo}>Full Stack Web Developer/Data Visualization Person</h3>
+            <h3 style={styles.myInfo}>Full Stack Web Developer and Data Visualization Developer</h3>
             <a href='https://docs.google.com/document/d/1_QOR4XqzpVgbC_Axvyqpd7bOzfU2rJLGPl3QRZrupWA/edit?usp=sharing' target='blank' style={styles.button}>Printable Resume</a>
           </div>
           <div style={styles.socialMediaLinkContainer}>
