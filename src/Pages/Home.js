@@ -2,6 +2,7 @@ import React from 'react'
 import FaTwitterSquare from 'react-icons/lib/fa/twitter'
 import FaGithubSquare from 'react-icons/lib/fa/github'
 import FaLinkedinSquare from 'react-icons/lib/fa/linkedin'
+import backgroundMountains from './images/mountains.jpg'
 
 const styles = {
   container: {
@@ -16,9 +17,10 @@ const styles = {
   marble: {
     width: '100%',
     height: '100vh',
-    backgroundImage: 'url(https://photos-6.dropbox.com/t/2/AABWRNepb1akHF5I0sAUieZF5KwkXqYA4zHFThvz1wR0bg/12/39366090/jpeg/32x32/1/_/1/2/StockSnap_9NWHXMX7RE.jpg/EKrZgh4Y9vUBIAIoAg/cOxaR2c-bO4my9eF7ec0Z9Ok5YMa7MSwzXrm39ObKHg?size=1280x960&size_mode=3)',
-    position: 'absolute',
-    backgroundSize: 'cover'
+    overflow: 'hidden'
+  },
+  marbleImage: {
+    width: '100%'
   },
   colorSection: {
     width: '100%',
@@ -123,6 +125,7 @@ const Home = () => {
     <div>
       <div style={styles.container}>
         <div style={styles.marble}>
+          <img style={styles.marbleImage} src={`${backgroundMountains}`} />
         </div>
         <div style={styles.colorSection}>
         </div>
