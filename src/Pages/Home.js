@@ -1,150 +1,76 @@
 import React from 'react'
+import styled from 'styled-components'
 import FaTwitterSquare from 'react-icons/lib/fa/twitter'
 import FaGithubSquare from 'react-icons/lib/fa/github'
-import FaLinkedinSquare from 'react-icons/lib/fa/linkedin'
-import backgroundMountains from './images/mountains.jpg'
+import CodePenSquare from 'react-icons/lib/fa/codepen'
 
-const styles = {
-  container: {
-    height: '100vh',
-    width: '100%',
-    backgroundColor: 'white',
-    position: 'relative',
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center'
-  },
-  marble: {
-    width: '100%',
-    height: '100vh',
-    overflow: 'hidden'
-  },
-  marbleImage: {
-    width: '100%'
-  },
-  colorSection: {
-    width: '100%',
-    height: '40vh',
-    backgroundColor: 'rgb(224, 130, 131)',
-    position: 'absolute',
-    top: '60vh'
-  },
-  centerFrame: {
-    width: '50%',
-    height: '90vh',
-    position: 'absolute',
-    top: '5vh',
-    backgroundColor: 'rgb(44, 62, 80)',
-    boxShadow: '0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22)',
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center'
-  },
-  backgroundTitle: {
-    position: 'absolute',
-    width: '100%',
-    backgroundColor: 'rgb(44, 62, 80)',
-    color: 'rgba(103, 128, 159, .8)',
-    fontFamily: 'Raleway',
-    fontSize: '3.7vh'
-  },
-  thinText: {
-    fontWeight: '200',
-    marginLeft: '2%'
-  },
-  thickText: {
-    fontWeight: '400'
-  },
-  image: {
-    maxWidth: '25vh',
-    borderRadius: '50%',
-    boxShadow: '0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22)',
-    marginTop: '8vh',
-    marginBottom: '4vh'
-  },
-  myName: {
-    fontFamily: 'Raleway',
-    color: 'rgba(103, 128, 159, .8)',
-    fontSize: '5vw',
-    marginTop: '2vh',
-    marginBottom: '10px',
-    padding: '0px'
-  },
-  myInfo: {
-    fontFamily: 'Raleway',
-    color: '#bdc3c7',
-    fontSize: '2vw',
-    margin: '0px',
-    paddingBottom: '3px',
-    marginBottom: '4vh',
-    marginLeft: '3%',
-    fontWeight: '200'
-  },
-  infoBox: {
-    padding: '5px',
-    marginLeft: '10%',
-    marginRight: '10%'
-  },
-  socialMediaLinkContainer: {
-    height: '10vh',
-    width: '100%',
-    backgroundColor: 'rgba(103, 128, 159, .8)',
-    position: 'absolute',
-    top: '80vh',
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    justifyContent: 'center'
-  },
-  iconsContainer: {
-    width: '50%',
-    display: 'flex',
-    flexDirection: 'row',
-    justifyContent: 'space-around',
-    alignItems: 'center',
-    fontSize: '6vh'
-  },
-  icon: {
-    color: '#cecece'
-  },
-  button: {
-    padding: '10px',
-    border: '1px solid #bdc3c7',
-    borderRadius: '10px',
-    marginTop: '6vh',
-    textDecoration: 'none',
-    color: '#bdc3c7',
-    fontFamily: 'Raleway',
-    fontSize: '1.5vw',
-    marginLeft: '3%',
+const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10vh;
+  height: 90vh;
+  background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);
+`
+const Image = styled.img`
+  max-width: 150px;
+  border-radius: 50%;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.30), 0 5px 6px rgba(0,0,0,0.22);
+`
+const HeaderOne = styled.h1`
+  font-family: Pacifico;
+  color: rgba(255, 118, 117, .5);
+  margin-bottom: 0px;
+`
+const HeaderTwo = styled.h3`
+  font-family: Raleway;
+  font-weight: 200;
+  color: white;
+  margin-top: 10px;
+`
+const IconContainer = styled.div`
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 2% 0% 2% 0%;
+`
+const Icon = styled.span`
+  color: white;
+  font-size: 50px;
+
+  &:hover {
+    color: rgba(255, 118, 117, .5);
   }
-}
+`
+const Button = styled.a`
+  border: 2px solid white;
+  color: white;
+  font-family: Raleway;
+  font-weight: 200;
+  padding: 10px 15px 10px 15px;
+  text-decoration: none;
+  margin-top: 20px;
+
+  &:hover {
+    border: 2px solid rgba(255, 118, 117, .5);
+    color: rgba(255, 118, 117, .5);
+  }
+`
 
 const Home = () => {
   return (
-    <div>
-      <div style={styles.container}>
-        <div style={styles.marble}>
-          <img style={styles.marbleImage} src={`${backgroundMountains}`} />
-        </div>
-        <div style={styles.colorSection}>
-        </div>
-        <div style={styles.centerFrame}>
-          <img src='https://pbs.twimg.com/profile_images/874739741547089921/tHTtxuZ3.jpg' style={styles.image}/>
-          <div style={styles.infoBox}>
-            <h1 style={styles.myName}><span style={styles.thinText}>Emily</span> <span style={styles.thickText}>Cheroske</span></h1>
-            <h3 style={styles.myInfo}>Full Stack Web Developer and Data Visualization Developer</h3>
-            <a href='https://docs.google.com/document/d/1_QOR4XqzpVgbC_Axvyqpd7bOzfU2rJLGPl3QRZrupWA/edit?usp=sharing' target='blank' style={styles.button}>Printable Resume</a>
-          </div>
-          <div style={styles.socialMediaLinkContainer}>
-            <div style={styles.iconsContainer}>
-              <a href='https://twitter.com/echeroske' target='blank' style={styles.icon}><FaTwitterSquare /></a>
-              <a href='https://github.com/3mi1y' target='blank' style={styles.icon}><FaGithubSquare /></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <Container>
+      <Image src='https://pbs.twimg.com/profile_images/874739741547089921/tHTtxuZ3.jpg'/>
+      <HeaderOne>Emily Cheroske</HeaderOne>
+      <HeaderTwo>Software Developer</HeaderTwo>
+      <IconContainer>
+        <a href='https://twitter.com/echeroske' target='blank'><Icon><FaTwitterSquare /></Icon></a>
+        <a href='https://github.com/3mi1y' target='blank'><Icon><FaGithubSquare /></Icon></a>
+        <a href="#" taget='blank'><Icon><CodePenSquare /></Icon></a>
+      </IconContainer>
+      <Button href='https://docs.google.com/document/d/1_QOR4XqzpVgbC_Axvyqpd7bOzfU2rJLGPl3QRZrupWA/edit?usp=sharing' target='blank'>Printable Resume</Button>
+    </Container>
   )
 }
 
