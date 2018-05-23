@@ -2,10 +2,10 @@ import React from 'react'
 
 const styles = {
   container: {
-    width: '50%',
+    width: '70%',
     backgroundColor: 'white',
-    boxShadow: '0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22)',
-    marginTop: '10px',
+    boxShadow: '0 19px 38px rgba(0,0,0,0.30), 0 7px 6px rgba(0,0,0,0.22)',
+    marginTop: '20px',
     marginBottom: '10px',
     padding: '3%',
     fontFamily: 'Raleway'

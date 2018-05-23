@@ -21,8 +21,9 @@ const About = () => {
   return (
     <Container>
       <Header>I create simple, elegant and functional designs.</Header>
-      <Header>I tell stories with data.</Header>
-      <Header>I build completely custom, interactive visualizations.</Header>
+      <Header>I like to explore and tell stories with data.</Header>
+      <Header>I build interactive visualizations.</Header>
+      <Header>Im passionate about building ecommerce solutions for small start ups and artists.</Header>
     </Container>
   )
 }
