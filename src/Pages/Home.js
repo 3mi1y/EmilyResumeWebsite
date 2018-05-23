@@ -29,11 +29,19 @@ const HeaderTwo = styled.h3`
   margin-top: 10px;
 `
 const IconContainer = styled.div`
-  width: 40%;
+  width: 35%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   padding: 2% 0% 2% 0%;
+
+  @media screen and (max-width: 600px) {
+    width: 60%;
+  }
+
+  @media screen and (min-width: 1000px) {
+    width: 20%;
+  }
 `
 const Icon = styled.span`
   color: white;
