@@ -4,7 +4,7 @@ import ExperienceBox from './ExperienceBox'
 const styles = {
   container: {
     width: '100%',
-    backgroundColor: 'rgba(103, 128, 159, .8)',
+    backgroundColor: 'white',
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
@@ -12,8 +12,8 @@ const styles = {
     paddingBottom: '5%'
   },
   header: {
-    color: 'rgb(44, 62, 80)',
-    fontFamily: 'Raleway',
+    color: '#93a5cf',
+    fontFamily: 'Lobster',
     fontSize: '8vh',
     textAlign: 'center',
     fontWeight: '200'

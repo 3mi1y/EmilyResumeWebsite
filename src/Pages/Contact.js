@@ -3,7 +3,7 @@ import React from 'react'
 const styles = {
   container: {
     width: '100%',
-    backgroundColor: 'rgb(224, 130, 131)',
+    backgroundColor: '#93a5cf',
     fontFamily: 'Raleway',
     margin: '0px',
     padding: '2%',

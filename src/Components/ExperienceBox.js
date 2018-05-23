@@ -12,7 +12,7 @@ const styles = {
   },
   header: {
     color: 'rgb(44, 62, 80)',
-    fontFamily: 'Raleway',
+    fontFamily: 'Lobster',
     fontSize: '3vw',
     marginBottom: '10px'
   },

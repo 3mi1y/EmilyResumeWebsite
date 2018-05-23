@@ -7,12 +7,12 @@ const styles = {
     flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'space-around',
-    backgroundColor: 'rgb(250, 250, 250)',
+    backgroundColor: 'white',
     paddingBottom: '5%'
   },
   header: {
-    color: 'rgb(44, 62, 80)',
-    fontFamily: 'Raleway',
+    color: '#93a5cf',
+    fontFamily: 'Lobster',
     fontSize: '8vh',
     textAlign: 'center',
     fontWeight: '200'

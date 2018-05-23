@@ -35,8 +35,8 @@ const experiences = [
   {
     title: 'Instructor',
     where: 'Big Sky Code Academy',
-    date: 'September 2017 - present',
-    learned: 'I\'m currently teaching a part-time online bootcamp that focuses on full stack web development.'
+    date: 'September 2017 - March 2017',
+    learned: 'I helped teach a part-time online bootcamp that focused on full stack web development.'
   }
 ]
 

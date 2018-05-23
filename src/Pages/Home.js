@@ -18,7 +18,7 @@ const Image = styled.img`
   box-shadow: 0 10px 30px rgba(0,0,0,0.30), 0 5px 6px rgba(0,0,0,0.22);
 `
 const HeaderOne = styled.h1`
-  font-family: Pacifico;
+  font-family: Lobster;
   color: rgba(255, 118, 117, .5);
   margin-bottom: 0px;
 `
